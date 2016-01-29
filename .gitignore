@@ -1,0 +1,16 @@
+
+import java.util.Collections;
+
+public class Main {
+
+	public static void main(String[] args) {
+		{
+			Prim prim = new Prim();
+			prim.LargePrim(3, 25);
+			int max = Collections.max(prim.getprimSumTerms());
+			int indexMax = prim.getprimSumTerms().indexOf(max);		
+			System.out.println(prim.getprimSumList().get(indexMax)+ " "+ max);
+		}
+	}
+
+}
